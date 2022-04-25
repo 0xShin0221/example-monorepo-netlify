@@ -1,0 +1,17 @@
+{
+  "name": "root",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true, 
+  "scripts": { 
+    "one:dev": "yarn workspace app-one-remix dev",
+    "one:build": "yarn workspace app-one-remix build",
+    "two:dev": "yarn workspace app-two-crats dev",
+    "two:build": "yarn workspace app-two-crats build"
+  },
+  "workspaces": { 
+    "packages": [
+      "app-one-remix","app-two-crats"
+    ]
+  }
+}
